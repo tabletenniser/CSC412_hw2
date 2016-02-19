@@ -1,0 +1,21 @@
+The main file for this question is mrf_question.m.  For most parts of this
+question you only need to fill in your code in the corresponding sections
+in mrf_question.m.
+
+For part b) you need to first implement the computation of sufficient
+statistics in suffStats.m, and then implement the log-likelihood
+computation in isingLlik.m.
+
+For part h) you can use the GraphLayout package to visualize a graph
+structure, take a look at the corresponding section in mrf_question.m for
+an example.  You are also free to use other visualization tools.
+
+Helper functions:
+- unnormProb.m computes the unnormalized log-probability, i.e.
+        sum_s theta_s x_s + sum_{s,t} theta_{st} x_s x_t
+  for all 2^N possible joint states of x.
+
+- margProb.m computes the unary and pairwise marginal probabilities.
+
+- getAdjacency.m computes the adjacency matrix of a graph from the given
+  parameter vector.
